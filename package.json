@@ -1,6 +1,6 @@
 {
   "name": "after-event",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Execute function after event is emitted and on any proceeding call",
   "main": "index.js",
   "scripts": {
