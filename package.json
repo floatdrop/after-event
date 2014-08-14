@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/floatdrop/after-event/issues"
   },
-  "homepage": "https://github.com/floatdrop/after-event"
+  "homepage": "https://github.com/floatdrop/after-event",
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  }
 }
