@@ -8,11 +8,11 @@ var after   = require('after-event');
 var events  = require('events');
 var ee      = new events.EventEmitter();
 
-after(ee, 'bang', function () { console.log('added before'); });
+after(ee, 'bang', function (data) { console.log(data); });
 
-ee.emit('bang'); // Logs `added before
+ee.emit('bang', 'emitted bang'); // Logs `emitted bang` and saves arguments to proceeding calls
 
-after(ee, 'bang', function () { console.log('Added after'); }); // Logs `added after`
+after(ee, 'bang', function (data) { console.log('other' + data); }); // Logs `other emitted bang` without emit called
 ```
 
 ## API
