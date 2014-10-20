@@ -23,7 +23,7 @@ it('should update cached values after event', function (done) {
     ee.emit('bang', 'wow!');
 
     after(ee, 'bang', function (data) {
-        assert.equal(data, 'wow!')
+        assert.equal(data, 'wow!');
         done();
     });
 });
