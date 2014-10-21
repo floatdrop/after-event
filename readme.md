@@ -13,6 +13,8 @@ after(ee, 'bang', function (data) { console.log(data); });
 ee.emit('bang', 'emitted bang'); // Logs `emitted bang` and saves arguments to proceeding calls
 
 after(ee, 'bang', function (data) { console.log('other' + data); }); // Logs `other emitted bang` without emit called
+
+ee.emit('bang', 'emitted bang 2'); // Stores new value
 ```
 
 ## API
