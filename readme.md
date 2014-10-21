@@ -1,7 +1,5 @@
 # after-event [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-__Experimental__ - almost never works. Use event emitter by hands.
-
 ## Usage
 
 ```js
